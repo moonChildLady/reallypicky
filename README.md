@@ -6,8 +6,8 @@ Email automaicaily sent out when user registered, completed payment and products
 
 Backend features:
 
-1. user management
+1. User management
 
-2. order management including update delivery status
+2. Order management including update delivery status
 
-3. coupon and promote code
+3. Generate coupon and promote code
