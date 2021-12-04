@@ -10,11 +10,11 @@
  class ExpressCheckout extends CApplicationComponent
  {
    
-   public $API_USERNAME="sirini_1313473286_biz_api1.gmail.com";
+   public $API_USERNAME="xxxx.gmail.com";
    
-   public $API_PASSWORD="1313473344";
+   public $API_PASSWORD="xxxxx";
    
-   public $API_SIGNATURE="An5ns1Kso7MWUdW4ErQKJJJ4qi4-AU8IA9mUzvO17e5sDQiA1iHUfL2j";
+   public $API_SIGNATURE="xxxx-xxx";
    
   
    public $returnURL;
