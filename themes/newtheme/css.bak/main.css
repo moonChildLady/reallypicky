@@ -1,0 +1,577 @@
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+@charset "UTF-8";
+/* CSS Document */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+html, body { height:100%; }
+body {
+		background: #9ca0a6;
+    font: 16px/23px "Microsoft JhengHei",Helvetica,"Helvetica Neue",Arial;
+		color:#778088;
+}
+* {
+    outline: none;
+}
+a { color:#0071bc; text-decoration:none;}
+a:hover {color:#09F; text-decoration:none;}
+h1, h2, h3, h4, h5 {
+	color:#6071b7;
+	font-weight:bold;
+	margin:0;
+}
+h1 { font-size:20px;line-height:29px; }
+h2 { font-size:18px;line-height:27px; }
+h3 { font-size:16px;line-height:25px; }
+.wrapper {
+    width:92%;
+		max-width:520px;
+    margin:0 auto;
+		border: 0px solid #ccc;
+}
+.finner {
+	margin-top:10px;
+	padding:0;
+}
+.fcr {
+	text-align:right;
+	font-size:10px;
+	color:#ccc;
+}
+.fbl {
+	float:left;
+	background: url(../img/logo-asters.png) no-repeat top center;
+	width:140px;
+	height:42px;
+	overflow:hidden;
+}
+.fbr {
+	float:right;
+	background: url(../img/reallypicky.png) no-repeat top center;
+	width:92px;
+	height:20px;
+	overflow:hidden;
+	margin:11px auto;
+}
+.fbl span, .fbr span { color:#fff; text-indent:-1999px; display:block; }
+.sfs {font-size:12px;}
+.mfs {font-size:14px; line-height:19px;}
+.mfm {font-size:16px; line-height:23px;}
+.btnp {min-height:150px; display:block;}
+.btsnp {min-height:50px; display:block;}
+.ncinb {padding:10px;font-size:14px;}
+.ncinb ul li, .ncinb ol li { margin-bottom:6px;}
+.gbox {
+	border:1px solid #ccc;
+	background:#eee;
+	padding:0 6px;
+	line-height:27px;
+	margin-top:8px;
+}
+
+/* ======= Shopping =======*/ 
+.header-container { 
+	border-top: 4px solid #1f2c5c;
+	background: #505ea5;
+}
+.event-header-container { 
+	border-top: 4px solid #80001e;
+	background: #d02b72;
+}
+.hlogo { 
+	float:left;
+	width:38px;
+	height:38px;
+	background: url(../img/logo-icon.png) no-repeat top center;
+	overflow:hidden;
+}
+.hlogo a, .hmenu a { 
+	position: relative;
+	line-height:340px;
+	text-indent:-1999px;
+	display:block;
+}
+.htitle {
+	height:42px;
+	font:Normal 20px/38px "Microsoft JhengHei","Helvetica Neue",Arial;
+	color:#fff;
+	text-align:center;
+}
+.htitle img { width:204px; height:22px; }
+.hmenu { 
+	float:right;
+	width:38px;
+	height:38px;
+	background: url(../img/menu-icon.png) no-repeat top center;
+	overflow:hidden;
+}
+.main-container {
+  background: url(../img/shop-bk01.jpg) #fff repeat-x top center;
+}
+.event-container {
+  background: url(../img/blurred-background.jpg) #fff repeat-x top left;
+}
+.order {
+	width:100%;
+	max-width:420px;
+	margin: 20px auto;}
+.title2 { 
+	border-bottom:2px solid #6071B7;
+}
+.pdtrow {
+	border-bottom:1px dotted #ccc;
+	padding:4px 0;
+	margin:3px 0;
+}
+.pdt2row {
+	border-bottom:2px solid #ccc;
+	padding:4px 0;
+	margin:3px 0;
+	}
+.footer-container {
+    background: #9ca0a6;
+}
+.pfx{
+	float:right;
+}
+.qtyminus, .qtyplus, .qty, .pdtdel { 
+	padding:2px;
+	font-size:16px;
+	line-heught:20px;
+	color:#777;
+	width:20px;
+	background:#eee;
+	border: 1px solid #ccc; 
+
+}
+.qtyminus {
+	background:#eee;
+	border-radius:5px 0 0 5px;
+}
+.qtyplus {
+	background:#eee;
+	border-radius:0 5px 5px 0;	
+}
+.qty { 
+	background:#FFF;
+	text-align:center;
+	}
+.pdtdel{
+	background:#eee;
+	border-radius:5px;	
+}
+.qtyplus:hover,.pdtdel:hover,.qtyminus:hover {
+	background:#fff;
+}
+.br {
+	border:1px solid #ccc;
+}
+[data-tip] {
+	position:relative;	
+}
+[data-tip]:before {
+	content:'';
+	/* hides the tooltip when not hovered */
+	display:none;
+	content:'';
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-bottom: 5px solid #777;	
+	position:absolute;
+	top:30px;
+	left:35px;
+	z-index:8;
+	font-size:0;
+	line-height:0;
+	width:0;
+	height:0;
+}
+[data-tip]:after {
+	display:none;
+	content:attr(data-tip);
+	position:absolute;
+	top:35px;
+	left:0px;
+	padding:5px 8px;
+	background:#555;
+	opacity:0.85;
+	color:#fff;
+	z-index:9;
+	font-size: 13px;
+	height:54px;
+	line-height:18px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+[data-tip]:hover:before,
+[data-tip]:hover:after {
+	display:block;
+}
+
+/* ======= Shopping =======*/ 
+.shipping { 
+	margin:15px 0;
+	border-bottom:1px solid #505ea5
+}
+.shrow {
+	margin:3px auto;
+}
+.tbl, .ofl, .oflp, .tbr, .ofr	{
+	float:left;
+}
+.tbl, .ofl {
+	line-height:26px;
+	width:80px;
+}
+.oflp {
+	line-height:26px;
+	width:46px;}
+.ofr {
+	font-size: 14px;
+	line-height:21px;
+}
+.ofr img, img.pdtfoto {
+	float:left;
+	width:70px;
+	height:70px;
+	margin-right:6px;
+	border:0px solid #ccc;
+	margin-bottom:4px;
+}
+.hprice {
+	font-size:18px;
+}
+.oprice { 
+	text-decoration: line-through;
+	color:#aaa;
+}
+.hprice, .sprice {
+	color:#F90;
+}
+.regionsel, .shippingsel { 
+	width:195px; 
+	height:26px;
+	color:#777;
+	background:#eee;
+	border:1px solid #ccc;
+	border-radius:5px;
+}
+.total { 
+	background:#d7dbed;
+	margin-top:10px;
+	border-top:1px solid #6071B7;
+	padding:4px 10px;
+	font-size:14px;
+}
+.total span {
+	font-size:18px;
+	color:#F60;
+}
+.tbr input, .tbr textarea, .tbsr input, .tbsr textarea { 
+	border-radius:5px;
+	border:1px solid #ccc;
+	padding:0 6px;
+	font-size:14px;
+	line-height:26px;
+}
+.fblock {
+	position: relative;
+	margin:12px auto;
+	width:276px;
+	}
+.fsblock {
+	position: relative;
+	margin:8px auto;
+	width:100%; }
+.tbr input, .tbr textarea { width:180px;}
+.tbsr input, .tbsr textarea { width:220px;}
+.atsp { margin-top: 2px;}
+.shupper {
+	width:100%;
+	max-width:420px;
+	margin:6px auto;
+	margin-top:20px;
+	}
+.ncb {
+	width:100%;
+	max-width:520px;
+	margin:6px auto;
+	margin-top:20px;
+	}
+.welcome, .shipinfo, .messagebox {
+	background: rgba(255,255,255,0.85);
+	padding:16px 10px;
+	margin-bottom:10px;
+	border:1px solid rgba(225,225,225,0.5);
+	border-radius:5px;
+	box-shadow: 0 2px 5px rgba(68,68,68,0.2);
+}
+.welcome p, .messagebox p {
+  padding:0; margin:0; 
+	margin-top:10px;
+	font-size:14px;
+	line-height:21px;
+}
+.order .inner { margin:20px auto; padding:0;}
+.pbtn	{ width:96%;}
+.fbtn	{ width:100%;}
+.pbtn, .fbtn {
+	margin:10px auto;
+	padding: 10px 0;
+	background:#d6dcf3;
+	border-radius:5px;
+	border:0px solid #458;
+	text-align:center;
+}
+.pbtn, .fbtn a {
+	display:block;
+}
+.pbtn:hover, .fbtn:hover {
+	background:#dfe3f5;
+}
+.lbtn {
+	width:270px;
+	background:#505ea5;
+	border-radius:5px;
+	border:1px solid #458;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:16px;
+	padding:6px;
+	text-decoration:none;
+}
+
+.lbtn:hover {
+	background:#6071b7;
+}
+
+.qtyplus:active,.pdtdel:active,.qtyminus:active,.lbtn:active, .pbtn:active, .fbtn:active {
+	position:relative;
+	top:1px;
+}
+
+.fsbox {
+	margin-top:8px;
+	font-size:13px;
+	line-height:18px;
+}
+.innlink { font-size:18px; line-height:23px; margin:4px auto;}
+.mtmnp { margin-top:10px;}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

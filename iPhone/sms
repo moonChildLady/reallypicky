@@ -1,0 +1,3 @@
+$("input[name='phoneNumber']").val("your_phone");
+$("input[name='reservationCode']").val("your_code");
+$("#smsPageForm").submit();

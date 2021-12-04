@@ -1,0 +1,14 @@
+<nav id="menu">
+		
+	<ul>
+
+		<li><span class="mm-title">HappySon 歡迎您!</span></li>
+    <li class="" style="margin-top:10px; line-height:1px;"></li>
+    <li><a href="/">活動首頁</a></li>
+		<li><a href="#">帳戶管理</a></li>
+		<li><a href="#">查閱訂單狀態</a></li>
+    <li><a href="mailto:reallypicky@aster.com.hk">查詢或協助</a></li>
+      
+	</ul>
+
+</nav>

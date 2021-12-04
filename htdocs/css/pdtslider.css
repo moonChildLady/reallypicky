@@ -1,0 +1,87 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#pdt.slider{
+	width: 280px; /*Same as width of the large image*/
+	position: relative;	/*Instead of height we will use padding*/
+	padding-top: 280px; /*That helps bring the labels down*/
+	margin: 0 auto;	/*Lets add a shadow*/
+	box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.15);
+}
+
+/*Last thing remaining is to add transitions*/
+#pdt.slider>img{
+	position: absolute;
+	left: 0; top: 0;
+	transition: all 0.9s;
+}
+
+#pdt.slider input[name='slide_switch'] {
+	display: none;
+}
+
+#pdt.slider label {
+	/*Lets add some spacing for the thumbnails*/
+	border-radius:0 ;
+	margin: 12px 2px 0 0;
+	border: 1px solid #ddd;
+	background: #fff; 
+	float: left;
+	cursor: pointer;
+	transition: all 0.5s;
+	left:0;
+	padding:0;
+	/*Default style = low opacity*/
+	opacity: 0.5;
+}
+
+#pdt.slider label img{
+	display: block;
+}
+
+/*click effects*/
+#pdt.slider input[name='slide_switch']:checked+label {
+	border-color: #bbb;
+	opacity: 1;
+}
+/*Clicking any thumbnail now should change its opacity(style)*/
+/*Time to work on the main images*/
+#pdt.slider input[name='slide_switch'] ~ img {
+	opacity: 0;
+	transform: scale(1.5);
+}
+/*That hides all main images at a 110% size
+On click the images will be displayed at normal size to complete the effect
+*/
+#pdt.slider input[name='slide_switch']:checked+label+img {
+	opacity: 1;
+	transform: scale(1);
+}
+/*Clicking on any thumbnail now should activate the image related to it*/
+
+
+#pdt.slider input[name='slide_switch2']:checked+label {
+	border-color: #bbb;
+	opacity: 1;
+}
+#pdt.slider input[name='slide_switch2'] ~ img {
+	opacity: 0;
+	transform: scale(1.5);
+}
+#pdt.slider input[name='slide_switch2']:checked+label+img {
+	opacity: 1;
+	transform: scale(1);
+}
+
+#pdt.slider input[name='slide_switch3']:checked+label {
+	border-color: #bbb;
+	opacity: 1;
+}
+#pdt.slider input[name='slide_switch3'] ~ img {
+	opacity: 0;
+	transform: scale(1.5);
+}
+#pdt.slider input[name='slide_switch3']:checked+label+img {
+	opacity: 1;
+	transform: scale(1);
+}

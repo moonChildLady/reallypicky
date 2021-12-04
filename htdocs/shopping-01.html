@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>ReallyPicky</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+        <meta http-equiv="cleartype" content="on">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/touch/apple-touch-icon-144x144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/touch/apple-touch-icon-114x114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/touch/apple-touch-icon-72x72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="img/touch/apple-touch-icon-57x57-precomposed.png">
+        <link rel="shortcut icon" sizes="196x196" href="img/touch/touch-icon-196x196.png">
+        <link rel="shortcut icon" href="img/touch/apple-touch-icon.png">
+        <!-- Tile icon for Win8 (144x144 + tile color) -->
+        <meta name="msapplication-TileImage" content="img/touch/apple-touch-icon-144x144-precomposed.png">
+        <meta name="msapplication-TileColor" content="#222222">
+        
+        <!-- SEO: If mobile URL is different from desktop URL, add a canonical link to the desktop page -->
+        <link rel="canonical" href="http://www.example.com/" >
+        
+        <!-- Add to homescreen for Chrome on Android -->
+        <meta name="mobile-web-app-capable" content="yes">
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/tabox.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+<!-- header start -->
+
+<!--#include virtual="ssi/header.shtml"-->
+
+
+<!-- main content -->
+
+<div class="main-container">
+	<div class="main wrapper clearfix">
+  	
+    
+		<!-- Upper Box -->
+    <form id="orderform" action="#">
+  	<div class="shupper">
+
+    	<!-- welcome message Box for signup -->
+			<div class="welcome">
+      	<h1>HappySon 歡迎您成為會員！</h1>
+				<p>在這𥚃，你會發現叫人驚喜產品，讓你便意選購。我們非常高興有您的加入！</p>
+				<p>如您需要檢視或變更個人資料，可以前往「<a href="#">帳戶管理中心</a>」以查看或更改。</p>
+			</div>
+      
+      <!-- welcome message Box for signup -->
+			<div class="welcome">
+      	<h1>HappySon 歡迎您再次回來！</h1>
+				<p>在這𥚃，你會發現叫人驚喜產品，讓你便意選購。你再次到來，我們感到非常高興！</p>
+				<p>如您需要檢視或變更個人資料，可以前往「<a href="#">帳戶管理中心</a>」以查看或更改。</p>
+			</div>
+      
+      <div class="shipinfo">
+      
+      	<div class="title2"><h2>填寫配送資料</h2></div>
+        <div class="pdtrow clearfix">收貨人</div>
+        
+        <div class="fsblock clearfix">
+          <div class="tbl">稱謂</div>
+    			<div class="tbr"><input id="title" name="title" placeholder="先生" type="text" required></div>
+				</div>
+        
+        <div class="fsblock clearfix">
+          <div class="tbl">姓名</div>
+    			<div class="tbr"><input id="name" name="name" placeholder="送往海外請以英文填寫" type="text" required></div>
+				</div>
+        
+        <div class="fsblock clearfix">
+          <div class="tbl">電話</div>
+    			<div class="tbr"><input id="tel" name="tel" placeholder="" type="text" required></div>
+				</div>
+				
+        <div class="fsblock clearfix">
+          <div class="tbl">配送地址</div>
+    			<div class="tbr"><textarea id="address" name="address" placeholder="送往海外請以英文填寫" cols="" rows="3" required></textarea></div>
+				</div>
+				
+        <div class="fsblock clearfix">
+          <div class="tbl">郵區編號</div>
+    			<div class="tbr"><input id="postalcode" name="postalcode" placeholder="" type="text" required></div>
+				</div>
+				
+        <div class="pdtrow clearfix">
+          <div class="tbl">國家/地區</div>
+    			<div class="tbr">
+          	<select name="region" id="region" class="regionsel">
+      				<option value="20" selected>香港</option>
+      			</select>
+          </div>
+				</div>
+				
+        <div class="fsblock clearfix">
+          <div class="tbl">備住留言</div>
+    			<div class="tbr"><textarea id="remark" name="remark" placeholder="可留空" cols="" rows="3"></textarea></div>
+				</div>
+  		
+      </div>
+      
+    </div>
+    
+		<!-- Lower Box -->
+    <div class="order">
+
+  		<div class="title2"><h2>確認訂單信息</h2></div>
+
+			<!-- order form -->
+      
+      
+      <!-- product into 1 -->
+      <div class="atsp" style="line-height:6px; height:6px;border-bottom:1px dotted #ccc;"></div>
+    	<div class="pdtrow clearfix">
+	      <div class="oflp">產品</div>
+        <div class="ofr" style="width:250px;"><img src="" class="pdtsfoto" />QB<br>日本持久無臭止汗<br>香體膏 6g</div>
+      </div>
+        
+    	<div class="pdtrow clearfix">
+      	<div class="oflp">單價</div>
+        <div class="ofr">
+        	<span class="oprice">HK$88.00</span>
+          <span class="hprice">HK$78.00</span>
+          <div class="sprice">（含HK$10折扣優惠）</div>
+        </div>
+      </div>
+      
+    	<div class="pdtrow clearfix">      
+        <div class="oflp">數量</div>
+        <div class="ofr"><input type="button" value="-" field="quantity" class="qtyminus" /><input 
+      	type="text" name="quantity" value="1" class="qty" /><input 
+      	type="button" value="+" field="quantity" class="qtyplus" /></div>
+        <div class="pfx">刪除&nbsp;<input type="button" value="x" class="pdtdel"/></div>
+      </div>
+      
+      <!-- product into 2 -->
+      <div class="atsp" style="line-height:6px; height:6px;border-bottom:1px dotted #ccc;"></div>
+    	<div class="pdtrow clearfix">
+	      <div class="oflp">產品</div>
+        <div class="ofr" style="width:250px;"><img src="" class="pdtsfoto" />QB<br>日本持久無臭止汗<br>香體膏 20g</div>
+      </div>
+        
+    	<div class="pdtrow clearfix">
+      	<div class="oflp">單價</div>
+        <div class="ofr">
+        	<span class="oprice">HK$158.00</span>
+          <span class="hprice">HK$148.00</span>
+          <div class="sprice">（含HK$10折扣優惠）</div>
+        </div>
+      </div>
+      
+    	<div class="pdtrow clearfix">      
+        <div class="oflp">數量</div>
+        <div class="ofr"><input type="button" value="-" field="quantity" class="qtyminus" /><input 
+      	type="text" name="quantity" value="1" class="qty" /><input 
+      	type="button" value="+" field="quantity" class="qtyplus" /></div>
+        <div class="pfx">刪除&nbsp;<input type="button" value="x" class="pdtdel"/></div>
+      </div> 
+      
+	    <div class="shipping">貨物配送</div>
+      
+     	<div class="shrow clearfix">
+	      <div class="ofl">國家/地區</div>
+  	    <div class="ofr">
+        	<select name="destination-id" id="destination-id" class="regionsel">
+      			<option value="20">香港</option>
+      		</select>
+      	</div>
+      </div>
+
+     	<div class="shrow clearfix">
+	      <div class="ofl">方式</div>
+        <div class="ofr">
+      		<select name="shippingMethod_id" id="shippingMethod_id" class="shippingsel">
+      			<option value="1">速遞 / 掛號</option>
+        		<option value="2">門市自取</option>
+      		</select>
+        </div>
+      </div>
+
+			<div class="shrow clearfix">
+      	<div class="ofl">運費</div>
+    		<div class="ofr">HK$0.00<br>( 免運費 )</div>
+      </div>
+      
+      <div class="total clearfix" style="text-align:right">
+				<span>總額 HK$ 226.00</span><br>
+				預計送貨日期：約10個工作天
+      </div>
+      <div class="fblock clearfix" align="center">
+      <input name="checkout" id="checkout" tabindex="5" value="結 帳" type="button" class="lbtn">
+      </div>
+      
+    </div>
+		</form>
+	</div>
+</div>
+
+<!-- footer start -->
+
+<!--#include virtual="ssi/footer.shtml"-->
+
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        
+
+    </body>
+</html>

@@ -1,0 +1,139 @@
+@charset "UTF-8";
+/* CSS Document */
+	.tabs {
+		position: relative;
+		height:310px;
+		min-height: 310px; /* This part sucks */
+		width:100%;
+		max-width:420px;
+		clear: both;
+		margin: 30px auto;
+  }
+  .tabs .tab, .tabs-pdt tab {
+		float: left;
+  }
+ .tabs .tab label:not(.control-label) {
+		background: #666; 
+    border: 0px solid #ccc;
+		border-radius:6px 6px 0 0 ;
+    margin-left: -6px; 
+    position: relative;
+    left:12%;
+		text-overflow: ellipsis;
+		overflow: hidden;
+		padding:8px 50px;
+		line-height:26px;
+		font-size:18px;
+		color:#fff;
+		opacity: 0.85; 
+  }
+  .tabs .tab [type=radio] {
+    display: none;   
+  }
+  .tabs .content {
+  	position: absolute;
+    top: 30px;
+		border-radius:6px;
+    left: 0;
+    background: white;
+    right: 0;
+    bottom: 0;
+    padding: 10px 0;
+    border: 1px solid #ccc;
+		box-shadow: 0 2px 6px rgba(110,108,106,0.1);
+		overflow:hidden;
+  }
+  .tabs [type=radio]:checked ~ label {
+		border: 1px solid #FFF;
+    background: white;
+    border-bottom: 1px solid white;
+    z-index: 2;
+		color:#6071b7;
+		opacity: 1; 
+  }
+.tabs-pdt .content > * ,	.tabs .content > * {
+   	opacity: 0;      
+   	-webkit-transform: translate3d(0, 0, 0);
+   	-webkit-transform: translateX(-100%);
+   	-moz-transform:    translateX(-100%);
+   	-ms-transform:     translateX(-100%);
+   	-o-transform:      translateX(-100%);
+   	-webkit-transition: all 0.6s ease;
+   	-moz-transition:    all 0.6s ease;
+   	-ms-transition:     all 0.6s ease;
+   	-o-transition:      all 0.6s ease;
+  }
+.tabs-pdt [type=radio]:checked ~ label,	.tabs [type=radio]:checked ~ label {
+    z-index: 2;
+  }
+.tabs-pdt [type=radio]:checked ~ label ~ .content, .tabs [type=radio]:checked ~ label ~ .content {
+    z-index: 1;
+  }
+.tabs-pdt [type=radio]:checked ~ label ~ .content > *, .tabs [type=radio]:checked ~ label ~ .content > * {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -moz-transform:    translateX(0);
+    -ms-transform:     translateX(0);
+    -o-transform:      translateX(0);
+  }
+
+/* ======= Aster Event Page =======*/ 
+
+.tabs-pdt {
+		position: relative;
+		min-height: 420px; /* This part sucks */
+		width:100%;
+		max-width:420px;
+		clear: both;
+		margin: 25px auto 0 auto;
+		display:block;
+  }
+	
+.tabs-pdt .tab {
+		float: left;
+  }
+.tabs-pdt .tab label {
+		background: #666; 
+    border: 0px solid #ccc;
+		border-radius:6px 6px 0 0 ;
+    margin: 0 2px; 
+    position: relative;
+    left:10%;
+		text-overflow: ellipsis;
+		overflow: hidden;
+		padding:10px 30px;
+		font:100 20px/20px Roboto;
+		color:#fff;
+		opacity: 0.85	; 
+  }
+.tabs-pdt	.tab [type=radio] {
+    display: none;   
+  }
+.tabs-pdt .tab .content {
+		position: absolute;
+    top: 32px;
+		border-radius:6px;
+    left: 0;
+    background:rgba(255,255,255,0.4);
+    right: 0;
+    bottom: 0;
+    padding: 20px 0;
+    border: 0px solid #ccc;
+		box-shadow: 0 2px 6px rgba(110,108,106,0.1);
+		overflow:hidden;
+	}
+.tabs-pdt .tab [type=radio]:checked ~ label {
+    background:rgba(255,255,255,0.8);
+    z-index: 2;
+		color:#79288c;
+		border: 0px solid #FFF;
+  }
+span.required{
+	display:none;
+}
+.errorMessage{
+	font-size:12px;
+}
+label{
+  font-weight: none;
+}
