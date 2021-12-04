@@ -1,1 +1,3 @@
-# Online shop with payment gateway by using Yii PHP framework
+# Online shop using Yii PHP framework
+
+Payment gateway: PayPal
