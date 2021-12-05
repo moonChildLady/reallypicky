@@ -10,7 +10,7 @@ PayPal extension
 ### Features:
 1. User management
 2. Order management including update delivery status
-3. Generate coupon and promote code
+3. Generate coupon and promotion code
 4. Email automaicaily send out when user registered, completed payment and products on delivery
 
 ### Screenshot
